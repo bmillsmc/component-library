@@ -1,6 +1,6 @@
 import React from "react";
 import "./Button.css"
-import Icon from "./../Icon/Icon"
+// import Icon from "./../Icon/Icon"
 
 function Button(props) {
     let classList = "";
@@ -22,7 +22,7 @@ function Button(props) {
         classList += ` button-large`
     }
     if(icon.includes(props.icon)) {
-        iconComp = <Icon src={`../icons/${props.icon}.svg`} />
+        // iconComp = <Icon src={`../icons/${props.icon}.svg`} />
         classList += ` button-icon`;
         divClass += ` icon-holder`
         if(props.iconText) {
