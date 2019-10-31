@@ -19,7 +19,22 @@ input {
 }
 
 .button-default-white {
-    background-color: #FFFFFF !important;
+    background-color: #FFFFFF;
+    color: #22262A;
+    border: #22262A 1px solid;
+}
+
+.button-default-white:focus {
+    outline: none;
+}
+
+.button-default-blur {
+    background-color: #F6F7F8;
+    color: #22262A;
+}
+
+.button-default-blur:focus {
+    outline: none;
 }
 
 .button-primary {
@@ -38,14 +53,23 @@ input {
 }
 
 .button-primary-white {
-    background-color: #FFFFFF !important;
+    background-color: #FFFFFF;
+    color: #33A0FF;
+    border: #33A0FF 1px solid;
 }
 
-/* .button-primary:active {
-    box-shadow: inset 0px 0px 10px #2f2f2f;
-    background-color: #0357b8;
-} */
+.button-primary-white:focus {
+    outline: none;
+}
 
+.button-primary-blur {
+    background-color: #33A0FF;
+    color: #33A0FF;
+}
+
+.button-primary-blur:focus {
+    outline: none;
+}
 .button-danger {
     color: white;
     background-color: #FF4858;
@@ -62,13 +86,23 @@ input {
 }
 
 .button-danger-white {
-    background-color: #FFFFFF !important;
+    background-color: #FFFFFF;
+    color: #FF4252;
+    border: #FF4252 1px solid;
 }
 
-/* .button-danger:active {
-    box-shadow: inset 0px 0px 10px #2f2f2f;
-    background-color: #9e343a;
-} */
+.button-danger-white:focus {
+    outline: none;
+}
+
+.button-danger-blur {
+    background-color: #FF4858;
+    color: #FF4252;
+}
+
+.button-danger-blur:focus {
+    outline: none;
+}
 
 .button-success {
     color: white;
@@ -86,13 +120,23 @@ input {
 }
 
 .button-success-white {
-    background-color: #FFFFFF !important;
+    background-color: #FFFFFF;
+    color: #0AD00A;
+    border: #0AD00A 1px solid;
 }
 
-/* .button-success:active {
-    box-shadow: inset 0px 0px 10px #2f2f2f;
-    background-color: #3e793d;
-} */
+.button-success-white:focus {
+    outline: none;
+}
+
+.button-success-blur {
+    background-color: #0AD00A;
+    color: #0AD00A;
+}
+
+.button-success-blur:focus {
+    outline: none;
+}
 
 
 
@@ -112,13 +156,23 @@ input {
 }
 
 .button-warning-white {
-    background-color: #FFFFFF !important;
+    background-color: #FFFFFF;
+    color: #FFC600;
+    border: #FFC600 1px solid;
 }
 
-/* .button-warning:active {
-    box-shadow: inset 0px 0px 5px #2f2f2f;
-    background-color: #c89e3a;
-} */
+.button-warning-white:focus {
+    outline: none;
+}
+
+.button-warning-blur {
+    background-color: #FFC600;
+    color: #FFC600;
+}
+
+.button-warning-blur:focus {
+    outline: none;
+}
 
 .button-large {
     padding: 10px 50px;
