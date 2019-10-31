@@ -1,12 +1,29 @@
 input {
     border-radius: 2px;
     padding: 5px 25px;
+    border: #707070;
+}
+
+.button-default {
+    background-color: #22262A;
+    color: #FFFFFF;
+}
+
+.button-default:hover {
+    background-color: #13161A;
+}
+
+.button-default:focus {
+    outline: none;
 }
 
 .button-primary {
-    border: #0069D9;
     color: white;
-    background-color: #0069D9;
+    background-color: #33A0FF;
+}
+
+.button-primary:hover {
+    background-color: #2E90E5;
 }
 
 .button-primary:focus {
@@ -19,9 +36,12 @@ input {
 } */
 
 .button-danger {
-    border: #cb444a;
     color: white;
-    background-color: #cb444a;
+    background-color: #FF4858;
+}
+
+.button-danger:hover {
+    background-color: #F53848;
 }
 
 .button-danger:focus {
@@ -34,9 +54,12 @@ input {
 } */
 
 .button-success {
-    border: #53a351;
     color: white;
-    background-color: #53a351;
+    background-color: #0AD00A;
+}
+
+.button-success:hover {
+    background-color: #07C107;
 }
 
 .button-success:focus {
@@ -48,14 +71,15 @@ input {
     background-color: #3e793d;
 } */
 
-.button-success:hover {
-    background-color: #288825
-}
+
 
 .button-warning {
-    border: #f6c244;
     color: black;
-    background-color: #f6c244;
+    background-color: #FFC600;
+}
+
+.button-warning:hover {
+    background-color: #EBB600;
 }
 
 .button-warning:focus {
