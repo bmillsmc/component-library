@@ -3,10 +3,6 @@ input {
     padding: 5px 25px;
 }
 
-.button-white {
-    background-color: #FFFFFF !important;
-}
-
 .button-default {
     background-color: #22262A;
     border: #22262A 1px solid;
