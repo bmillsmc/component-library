@@ -10,6 +10,7 @@ storiesOf("Button", module)
         label="Primary"
         type="primary"
     />)
+    
     .add('Danger', () => <Button 
         label="Danger"
         type="danger"
@@ -22,4 +23,8 @@ storiesOf("Button", module)
     .add("Warning", () => <Button 
         label="Warning"
         type="warning"
+    />)
+    .add("Default-White", () => <Button 
+        label="Default"
+        variate="white"
     />)
