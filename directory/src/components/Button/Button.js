@@ -14,6 +14,9 @@ function Button(props) {
     if(variate.includes(props.variate)) {
         classList += `-${props.variate}`;
     }
+    if(props.large) {
+        classList += ` button-large`
+    }
     return (
         <input className={classList} value={props.label} type="submit"/>
     );

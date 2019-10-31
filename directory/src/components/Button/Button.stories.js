@@ -14,6 +14,20 @@ storiesOf("Button", module)
         label="Default"
         variate="blur"
     />)
+    .add("Default Large", () => <Button 
+        label="Default"
+        large
+    />)
+    .add("Default White Large", () => <Button 
+        label="Default"
+        variate="white"
+        large
+    />)
+    .add("Default Blur Large", () => <Button 
+        label="Default"
+        variate="blur"
+        large
+    />)
     .add("Primary", () => <Button 
         label="Primary"
         type="primary"
@@ -27,6 +41,23 @@ storiesOf("Button", module)
         label="Primary"
         type="primary"
         variate="blur"
+    />)
+    .add("Primary Large", () => <Button 
+        label="Primary"
+        type="primary"
+        large
+    />)
+    .add("Primary White Large", () => <Button 
+        label="Primary"
+        type="primary"
+        variate="white"
+        large
+    />)
+    .add("Primary Blur Large", () => <Button 
+        label="Primary"
+        type="primary"
+        variate="blur"
+        large
     />)
     .add('Danger', () => <Button 
         label="Danger"
@@ -42,6 +73,23 @@ storiesOf("Button", module)
         type="danger"
         variate="blur"
     />)
+    .add('Danger Large', () => <Button 
+        label="Danger"
+        type="danger"
+        large
+    />)
+    .add("Danger White Large", () => <Button 
+        label="Danger"
+        type="danger"
+        variate="white"
+        large
+    />)
+    .add("Danger Blur Large", () => <Button 
+        label="Danger"
+        type="danger"
+        variate="blur"
+        large
+    />)
     .add("Success", () => <Button 
         label="Success" 
         type="success"
@@ -56,6 +104,23 @@ storiesOf("Button", module)
         type="success"
         variate="blur"
     />)
+    .add("Success Large", () => <Button 
+        label="Success" 
+        type="success"
+        large
+    />)
+    .add("Success White Large", () => <Button 
+        label="Success"
+        type="success"
+        variate="white"
+        large
+    />)
+    .add("Success Blur Large", () => <Button 
+        label="Success"
+        type="success"
+        variate="blur"
+        large
+    />)
     .add("Warning", () => <Button 
         label="Warning"
         type="warning"
@@ -69,6 +134,23 @@ storiesOf("Button", module)
         label="Warning"
         type="warning"
         variate="blur"
+    />)
+    .add("Warning Large", () => <Button 
+        label="Warning"
+        type="warning"
+        large
+    />)
+    .add("Warning White Large", () => <Button 
+        label="Warning"
+        type="warning"
+        variate="white"
+        large
+    />)
+    .add("Warning Blur Large", () => <Button 
+        label="Warning"
+        type="warning"
+        variate="blur"
+        large
     />)
     
     
