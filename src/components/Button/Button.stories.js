@@ -152,5 +152,10 @@ storiesOf("Button", module)
         variate="blur"
         large
     />)
+    // .add("Cart Icon", () => <Button
+    //     type="primary"
+    //     variate="blur"
+    //     icon="cart"
+    // />)
     
     
