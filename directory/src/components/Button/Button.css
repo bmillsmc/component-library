@@ -29,7 +29,7 @@ input {
 }
 
 .button-default-blur {
-    background-color: #F6F7F8;
+    background-color: rgba(112, 112, 112, 0.1);
     color: #22262A;
 }
 
@@ -63,7 +63,7 @@ input {
 }
 
 .button-primary-blur {
-    background-color: #33A0FF;
+    background-color: rgba(51, 160, 255, 0.1);
     color: #33A0FF;
 }
 
@@ -96,7 +96,7 @@ input {
 }
 
 .button-danger-blur {
-    background-color: #FF4858;
+    background-color: rgba(255, 72, 88, 0.1);
     color: #FF4252;
 }
 
@@ -130,7 +130,7 @@ input {
 }
 
 .button-success-blur {
-    background-color: #0AD00A;
+    background-color: rgba(10, 208, 10, 0.1);
     color: #0AD00A;
 }
 
@@ -166,7 +166,7 @@ input {
 }
 
 .button-warning-blur {
-    background-color: #FFC600;
+    background-color: rgba(255, 198, 0, 0.1);
     color: #FFC600;
 }
 
