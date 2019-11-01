@@ -6,17 +6,31 @@ class SelectInput extends Component {
         super(props);
         let optionList = props.options.slice(0);
         optionList.unshift(props.fieldName)
+        let classList = "";
+        if(props.medium) {
+            classList += ` select-medium`
+        } else if (props.large) {
+            classList += ` select-large`
+        } else {
+            classList += ` select-small`
+        }
+        if(props.filled) {
+            classList += `-filled`
+        } else {
+            classList += `-outline`
+        }
         this.state = {
-            optionList: optionList
+            optionList: optionList,
+            classList: classList
         }
     }
 
     render() {
         return (
-            <select>
+            <select defaultValue="default" className={this.state.classList}>
                 {this.state.optionList.map((element, index) => {
                     if(index === 0) {
-                        return <option disabled="disabled" selected="selected" value={element} key={index}>{element}</option>
+                        return <option disabled hidden value="default" key={index}>{element}</option>
                     } else {
                         return <option value={element} key={index}>{element}</option>
                     }
