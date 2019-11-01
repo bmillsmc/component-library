@@ -5,22 +5,41 @@ import "./TextInputButton.css";
 class TextInputButton extends Component {
     constructor(props) {
         super(props);
-
-        this.super = {
-            
+        let large;
+        let small;
+        if(props.big) {
+            large = true;
+            small = false;
+        } else {
+            large = false;
+            small = true;
         }
+        this.state = {
+            large: large,
+            small: small,
+            action: props.action,
+            butText: props.butText,
+            placeholder: props.placeholder
+        }
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick(evt) {
+        evt.preventDefault();
+        this.state.action(evt.target.parentNode.childNodes[0][0].value)
     }
 
     render() {
         return(
-            <form>
-                <div className="text-butt-wrap">
-                    <TextInputLabel 
-
-                    />
-                    <input type="submit" />
-                </div>
-            </form>
+            <div className="text-butt-wrap">
+                <TextInputLabel 
+                    placeholder={this.state.placeholder}
+                    small={this.state.small}
+                    large={this.state.large}
+                />
+                <input type="submit" onClick={this.handleClick} />
+            </div>
         );
     }
 }
