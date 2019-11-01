@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+.text-butt-wrap-small, .text-butt-wrap-big {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.input-small, .input-large {
+    border: 1px solid #F1F3F4;
+}
+
+.input-large:focus {
+    outline: none;
+}
+
+.input-small:focus {
+    outline: none;
+}
+
+.submit {
+    background-color: #33A0FF;
+    color: white;
+    border: none;
+}
+
+.text-butt-wrap-small * {
+    height: 46px;
+}
+
+.text-butt-wrap-big * {
+    height: 60px;
+}

@@ -5,6 +5,11 @@ form {
     justify-content: flex-start;
 }
 
+.input-small, .input-medium, .input-large {
+    border: 1px solid #F1F3F4;
+    font-size: 14px;
+}
+
 .input-small {
     padding: 6px 25px 6px 6px;
 }
@@ -19,4 +24,5 @@ form {
 
 .label {
     font-size: 14px;
+    margin-left: 2px;
 }

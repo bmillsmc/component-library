@@ -7,19 +7,23 @@ class TextInputButton extends Component {
         super(props);
         let large;
         let small;
+        let classList = "";
         if(props.big) {
             large = true;
             small = false;
+            classList += ` text-butt-wrap-big`
         } else {
             large = false;
             small = true;
+            classList += ` text-butt-wrap-small`
         }
         this.state = {
             large: large,
             small: small,
             action: props.action,
             butText: props.butText,
-            placeholder: props.placeholder
+            placeholder: props.placeholder,
+            classList: classList
         }
 
         this.handleClick = this.handleClick.bind(this);
@@ -32,13 +36,13 @@ class TextInputButton extends Component {
 
     render() {
         return(
-            <div className="text-butt-wrap">
+            <div className={this.state.classList}>
                 <TextInputLabel 
                     placeholder={this.state.placeholder}
                     small={this.state.small}
                     large={this.state.large}
                 />
-                <input type="submit" onClick={this.handleClick} />
+                <input type="submit" className="submit" onClick={this.handleClick} />
             </div>
         );
     }

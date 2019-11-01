@@ -40,12 +40,19 @@ class TextInputLabel extends Component {
     }
 
     render() {
-        return (
-            <form>
-                <label htmlFor={this.state.label} className="label">{this.state.label}</label>
+        if(this.state.label === "") {
+            return (
                 <input type="text" id={this.state.label} placeholder={this.state.placeholder} className={this.state.classList}/>
-            </form>
-        );
+            );
+        } else {
+            return (
+                <form>
+                    <label htmlFor={this.state.label} className="label">{this.state.label}</label>
+                    <input type="text" id={this.state.label} placeholder={this.state.placeholder} className={this.state.classList}/>
+                </form>
+            );
+        }
+        
     }
 }
 
