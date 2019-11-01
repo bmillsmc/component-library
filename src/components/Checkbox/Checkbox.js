@@ -9,7 +9,8 @@ class Checkbox extends Component {
         this.state = {
             checkedSrc: props.checked,
             uncheckedSrc: props.unchecked,
-            checked: false
+            checked: false,
+            label: props.label
         }
         this.createIcon = this.createIcon.bind(this);
         this.handleClick = this.handleClick.bind(this);
@@ -34,11 +35,23 @@ class Checkbox extends Component {
     }
 
     render() {
-        return (
-            <div onClick={this.handleClick}>
-                {this.createIcon()}
-            </div>
-        );
+        if(this.state.label !== false) {
+            return (
+                <div className="check-wrap">
+                    <div onClick={this.handleClick}>
+                        {this.createIcon()}
+                    </div>
+                    <p>{this.state.label}</p>
+                </div>
+            );
+        } else {
+            return (
+                <div onClick={this.handleClick}>
+                    {this.createIcon()}
+                </div>
+            );
+        }
+        
     }
 }
 

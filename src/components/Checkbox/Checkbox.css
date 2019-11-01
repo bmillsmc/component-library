@@ -1,0 +1,9 @@
+.check-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.check-wrap p {
+    margin-left: 5px;
+}
