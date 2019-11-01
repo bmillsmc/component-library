@@ -1,24 +1,43 @@
-.select-small-outline {
+select {
+    border-radius: 2px;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+
+option {
+    width: 100%;
+    font-size: 14px;
+}
+
+.select-wrapper {
 
 }
 
-.select-small-filled {
-
+.select-small-outline, .select-medium-outline, .select-large-outline {
+    background-color: white;
+    border: 1px #F1F3F4 solid;
 }
 
-.select-medium-outline {
-
+.select-small-filled, .select-medium-filled, .select-large-filled {
+    background-color: #FAFAFB;
+    border: none;
 }
 
-.select-medium-filled {
-
+.select-small-outline, .select-small-filled {
+    width: 200px;
+    height: 38px;
 }
 
-.select-large-outline {
-
+.select-medium-outline, .select-medium-filled {
+    width: 300px;
+    height: 46px;
 }
 
-.select-large-filled {
-
+.select-large-outline, .select-large-filled {
+    width: 300px;
+    height: 60px;
 }
 

@@ -27,15 +27,17 @@ class SelectInput extends Component {
 
     render() {
         return (
-            <select defaultValue="default" className={this.state.classList}>
-                {this.state.optionList.map((element, index) => {
-                    if(index === 0) {
-                        return <option disabled hidden value="default" key={index}>{element}</option>
-                    } else {
-                        return <option value={element} key={index}>{element}</option>
-                    }
-                })}
-            </select>
+            <div className="select-wrapper">
+                <select defaultValue="default" className={this.state.classList}>
+                    {this.state.optionList.map((element, index) => {
+                        if(index === 0) {
+                            return <option disabled hidden value="default" key={index}>{element}</option>
+                        } else {
+                            return <option value={element} key={index}>{element}</option>
+                        }
+                    })}
+                </select>
+            </div>
         );
     }
 }
