@@ -11,7 +11,6 @@ class Checkbox extends Component {
             uncheckedSrc: props.unchecked,
             checked: false
         }
-
         this.createIcon = this.createIcon.bind(this);
         this.handleClick = this.handleClick.bind(this);
     }
@@ -29,7 +28,9 @@ class Checkbox extends Component {
     }
 
     handleClick() {
-
+        this.setState({
+            checked: !this.state.checked
+        })
     }
 
     render() {
