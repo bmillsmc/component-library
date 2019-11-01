@@ -21,7 +21,8 @@
     color: #33A0FF;
     height: 46px;
     padding: 0 20px 0 15px;
-    font-size: 14px
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .counter-wrapper p {
