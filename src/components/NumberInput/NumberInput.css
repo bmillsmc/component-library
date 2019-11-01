@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+.counter-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 116px;
+    height: 46px;
+    background-color: #F6F7F8;
+}
+
+.counter-wrapper *{
+    background-color: #F6F7F8;
+    width: 33.333%;
+}
+
+.counter-wrapper input {
+    border: none;
+    color: #33A0FF;
+    height: 46px;
+    padding: 0 20px 0 15px;
+    font-size: 14px
+}
+
+.counter-wrapper p {
+    text-align: center;
+}
+
+.counter-wrapper input:focus {
+    outline: none;
+}
